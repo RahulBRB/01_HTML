@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Parallax Website Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 36px;
+    }
+    .section:nth-child(odd) {
+        background-color: #333;
+    }
+    .section:nth-child(even) {
+        background-color: #666;
+    }
+    .section1 {
+        background-image: url('https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .section1 .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .section2 {
+        background-image: url('https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .section2 .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="section section1">
+    <div class="content">
+        <h1>Welcome to Parallax Website</h1>
+        <p>Scroll down to see the effect</p>
+    </div>
+</div>
+
+<div class="section section2">
+    <div class="content">
+        <h2>Section 2</h2>
+        <p>This is another section with parallax effect</p>
+    </div>
+</div>
+
+</body>
+</html>
